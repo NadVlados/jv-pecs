@@ -6,10 +6,10 @@ import java.util.List;
 public class TruckProducer implements MachineProducer {
     @Override
     public List<Truck> get() {
-        Truck truck1 = new Truck();
-        Truck truck2 = new Truck();
-        Truck truck3 = new Truck();
-        List<Truck> trucks = List.of(truck1, truck2, truck3);
-        return trucks;
+        return List.of(
+                new Truck(),
+                new Truck(),
+                new Truck()
+        );
     }
 }
